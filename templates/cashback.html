@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cashback Offer</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .container {
+      background: white;
+      display: inline-block;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #007bff;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎉 Congratulations! You’ve Unlocked a Cashback Offer 🎉</h2>
+    <img src="{{ url_for('static', filename='images/cashback.png') }}" alt="Cashback Offer">
+    <p>Thank you for logging in. Enjoy exclusive cashback deals!</p>
+    <a href="/">Go Back to Login</a>
+  </div>
+</body>
+</html>
